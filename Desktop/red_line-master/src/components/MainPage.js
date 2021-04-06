@@ -41,6 +41,7 @@ class MainPage extends Component{
                 <div className = "navbar-container">
                  <img className = "logo" src={logo} ></img>
                  <Link to="/"><a href= "/" className="active">Home</a></Link> {/*selected page*/}
+                 {/* We eventually need to remove this data section. This is for testing. */}
                  <Link to="/Data"><a href ="/Data" className="data">Data</a></Link>
 		         <Link to="/Inventory"><a href ="/Inventory" className="inventory">Inventory</a></Link>
 		         <a>Contact</a>
