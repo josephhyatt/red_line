@@ -1,0 +1,117 @@
+/*Top Navigation Bar */
+.navBar {
+	background-color: #aeaeae;
+	/* margin-left: -8px;
+    margin-right: -8px; */
+	margin-top: 0px;
+	overflow: hidden;
+	width: 100%;
+}
+
+.navBar a {
+	float: center;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 12px 12px;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+.navBar a:hover {
+	background-color: #ff0000;
+	color: black;
+}
+
+.navBar a.active {
+	background-color: #ff0000;
+	color: white;
+}
+
+/*Top Login/Register Bar */
+.topNav div {
+	/* position: absolute; */
+	/* top: 0;
+    left: 0; */
+	/* width: 80%; */
+	height: 35px;
+	z-index: -1;
+	background-color: #ff0000;
+	overflow: hidden;
+	text-align: right;
+}
+
+.topNav a {
+	float: right;
+	color: #f2f2f2;
+	/* text-align: center; */
+	padding: 10px 10px;
+	text-decoration: none;
+	font-size: 15px;
+}
+
+.topNav a:hover {
+	background-color: #ff0000;
+	color: black;
+}
+
+/*Search Bar*/
+.form-group {
+	background-color: #8a2121;
+	padding: 10px 750px;
+	/* margin-left: -8px;
+    margin-right: -8px; */
+	width: 100%;
+}
+
+.searchform {
+	position: relative;
+	top: 30px;
+	right: 70px;
+}
+.Submit {
+	background-color: #ff0000;
+	border: none;
+	color: white;
+	padding: 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 0px 450px;
+	cursor: pointer;
+	border-radius: 12px;
+	position: relative;
+	top: -35px;
+	right: 70px;
+}
+
+/*Footer */
+.footer {
+	background-color: #d35353;
+}
+
+.footer {
+	float: center;
+	color: #f2f2f2;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 9px;
+	text-decoration: none;
+	font-size: 13px;
+}
+
+/*Banner Image*/
+.banner img {
+	background-size: cover;
+	width: 100%;
+}
+
+/*Site Top Logo*/
+.logo {
+	position: relative;
+	z-index: 1;
+	margin-left: 10px;
+	height: 10%;
+	width: 10%;
+	top: -5px;
+}

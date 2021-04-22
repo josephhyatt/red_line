@@ -1,0 +1,118 @@
+/*Top Navigation Bar */
+.navBar {
+	background-color: #aeaeae;
+	/* margin-left: -8px;
+	margin-right: -8px; */
+	margin-top: 0px;
+	overflow: hidden;
+	width: 100%;
+}
+
+.navBar a {
+	float: center;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 12px 12px;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+.navBar a:hover {
+	background-color: #ff0000;
+	color: black;
+}
+
+.navBar a.active {
+	background-color: #ff0000;
+	color: white;
+}
+
+/*Top Login/Register Bar */
+.topNav {
+	/* position: fixed; */
+	/* top: 0;
+	left: 0; */
+	width: 100%;
+	height: 35px;
+	z-index: -1;
+	background-color: #ff0000;
+	overflow: hidden;
+}
+
+.topNav a {
+	float: right;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 5px 5px;
+	text-decoration: none;
+	font-size: 15px;
+}
+
+.topNav a:hover {
+	background-color: #ff0000;
+	color: black;
+}
+
+/*Footer */
+.footer {
+	background-color: #d35353;
+}
+
+.footer {
+	float: center;
+	color: #f2f2f2;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 9px;
+	text-decoration: none;
+	font-size: 13px;
+}
+
+/*Banner Image*/
+.bannerblur img {
+	width: 100%;
+	filter: blur(8px);
+	-webkit-filter: blur(8px);
+}
+
+.loginform {
+	position: absolute;
+	top: 25%;
+	left: 40%;
+	padding: 20px;
+	background-color: #dadada;
+	background-color: #dadada;
+}
+
+input[type="text"],
+input[type="password"] {
+	width: 100%;
+	padding: 5px;
+	margin: 5px 0 22px 0;
+	display: inline-block;
+	border: none;
+	background: #f1f1f1;
+}
+
+.loginfont {
+	text-align: center;
+}
+
+.bformtext {
+	text-align: center;
+}
+
+.registercolor {
+	color: blue;
+	font-weight: bold;
+}
+
+/*Site Top Logo*/
+.logo {
+	position: relative;
+	z-index: 1;
+	margin-left: 10px;
+	height: 10%;
+	width: 10%;
+	top: -5px;
+}
