@@ -1,13 +1,12 @@
 import React from "react";
-import logo from "./images/logo.png";
 import "./MainPage.css";
-import { BrowserRouter } from "react-router-dom";
 import Card from "react-bootstrap/Card";
 import { Grid } from "@material-ui/core";
 import fire from "./Fire";
 import CardColumns from "react-bootstrap/CardColumns";
 import CarInfo from "./CarInfo";
 import NavBarLogin from "./NavBarLogin";
+import NavBarPages from "./NavBarPages";
 
 function Inventory() {
 	const [items, setItems] = React.useState([]);
@@ -21,26 +20,27 @@ function Inventory() {
 			setItems(data.docs.map((doc) => doc.data()));
 		};
 		fetchItems();
-		const checkLogin = async () => {
-			if (user) {
-				console.log("User email: ", user.email);
-				var db = fire.firestore();
-				var userID = String(user.uid);
-				db.collection("userInfo")
-					.where("id", "==", userID)
-					.get()
-					.then((doc) => {
-						doc.forEach((user) => {
-							if (user.data().priv > 0) {
-								window.alert(
-									"Welcome: " + user.data().email + ", You are an Employee!"
-								);
-							}
-						});
-					});
-			}
-		};
-		checkLogin();
+		// Probably won't need this.
+		// const checkLogin = async () => {
+		// 	if (user) {
+		// 		console.log("User email: ", user.email);
+		// 		var db = fire.firestore();
+		// 		var userID = String(user.uid);
+		// 		db.collection("userInfo")
+		// 			.where("id", "==", userID)
+		// 			.get()
+		// 			.then((doc) => {
+		// 				doc.forEach((user) => {
+		// 					if (user.data().priv > 0) {
+		// 						window.alert(
+		// 							"Welcome: " + user.data().email + ", You are an Employee!"
+		// 						);
+		// 					}
+		// 				});
+		// 			});
+		// 	}
+		// };
+		// checkLogin();
 	}, []);
 
 	return (
@@ -48,28 +48,7 @@ function Inventory() {
 			{/*Top Login/Register navigation bar*/}
 			<NavBarLogin />
 
-			{/*Navigation Bar*/}
-			<nav className="navBar">
-				<div className="navbar-container">
-					<img className="logo" src={logo}></img>
-					<BrowserRouter to="/">
-						<a href="/" className="">
-							Home
-						</a>
-					</BrowserRouter>{" "}
-					{/*selected page*/}
-					<BrowserRouter to="/Inventory">
-						<a href="/Inventory" className="active">
-							Inventory
-						</a>
-					</BrowserRouter>
-					<BrowserRouter to="#">
-						<a href="#" className="inventory">
-							Contact
-						</a>
-					</BrowserRouter>
-				</div>
-			</nav>
+			<NavBarPages />
 
 			<div className="banner"></div>
 			<Grid container>

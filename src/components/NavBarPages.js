@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./MainPage.css";
 import { BrowserRouter as Link } from "react-router-dom";
 import logo from "./images/logo.png";
+import NavBarTools from "./NavBarTools";
 
 class NavBarPages extends Component {
 
@@ -23,16 +24,12 @@ class NavBarPages extends Component {
                                 Inventory
                             </a>
                         </Link>
-                        <Link to="/Data">
-                            <a href="/Data" className="data">
-                                Data
-                            </a>
-                        </Link>
                         <Link to="#">
                             <a href="#" className="inventory">
                                 Contact
                             </a>
                         </Link>
+                        <NavBarTools/>
                     </div>
                 </nav>
         )};
