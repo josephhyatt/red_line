@@ -1,7 +1,8 @@
 import "./MainPage.css";
 import fire from "./Fire";
 import CarInfo from "./CarInfo";
-
+import React from "react";
+import NavBarPages from "./NavBarPages";
 function Data() {
 	const [items, setItems] = React.useState([]);
 
@@ -16,6 +17,8 @@ function Data() {
 
 	return (
 		<div>
+			<NavBarPages/>
+			<h1>WELCOME TO THE SECRET PAGE ONLY EMPLOYEES CAN SEE!</h1>
 			{items.map((item) => (
 				<>
 					<h1>
