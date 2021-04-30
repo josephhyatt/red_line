@@ -12,11 +12,18 @@ class NavBarLogin extends Component {
 		const user = fire.auth().currentUser;
 		if (user) {
 			return (
-				<Link>
-					<a onClick={this.logout} href="/Login" className="Register">
-						Logout
-					</a>
-				</Link>
+				<>
+					<Link>
+						<a onClick={this.logout} href="/Login" className="Register">
+							Logout
+						</a>
+					</Link>
+					<Link to="/Profile">
+							<a href="/Profile" className="Profile">
+								Profile
+							</a>
+					</Link>
+				</>
 			);
 		} else {
 			return (
