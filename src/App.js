@@ -13,6 +13,7 @@ import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import Vehicle from "./components/Vehicle";
 import PrivateRoute, { EmployeeRoute, ManagerRoute } from"./components/PrivateRoute";
 import { AuthProvider } from "./components/Auth";
+import Profile from "./components/Profile";
 class App extends Component {
 	constructor() {
 		super();
@@ -74,6 +75,12 @@ class App extends Component {
 							{/* Speculating on the best location of this element, this causes general slow down on the website. 
 								Originally, this wrapped the whole router*/}
 							<AuthProvider>
+								<PrivateRoute
+									exact
+									path={"/Profile"}
+									component={Profile}
+								/>
+
 								<EmployeeRoute
 									exact
 									path={"/Data"}
