@@ -3,6 +3,10 @@ import logo from "./images/logo.png";
 import "./Vehicle.css";
 import { BrowserRouter as Link } from "react-router-dom";
 import NavBarLogin from "./NavBarLogin";
+import NavBarPages from "./NavBarPages";
+import fire from "./Fire";
+import FavButton from "./FavButton";
+
 
 const Vehicle = ({
 	location: {
@@ -10,33 +14,14 @@ const Vehicle = ({
 	},
 }) => {
 	const imgpath = "https://" + car.image;
+	
+	
 	return (
 		<>
 			{/*Top Login/Register navigation bar*/}
 			<NavBarLogin />
 
-			{/*Navigation Bar*/}
-			<nav className="navBar">
-				<div className="navbar-container">
-					<img className="logo" src={logo}></img>
-					<Link to="/">
-						<a href="/" className="active">
-							Home
-						</a>
-					</Link>{" "}
-					{/*selected page*/}
-					<Link to="/Inventory">
-						<a href="/Inventory" className="inventory">
-							Inventory
-						</a>
-					</Link>
-					<Link to="#">
-						<a href="#" className="inventory">
-							Contact
-						</a>
-					</Link>
-				</div>
-			</nav>
+			<NavBarPages />
 
 			<div className="details">
 				<div className="big-img">
@@ -56,7 +41,11 @@ const Vehicle = ({
 						<span>Price: ${car.price}</span> {/*Price Tag*/}
 						<p>{car.moreDetails}</p>
 					</div>
+					{/* THIS NEEDS STYLING */}
+					<br></br>
+					<FavButton car={car}/>	
 				</div>
+				
 			</div>
 
 			{/*Footer*/}

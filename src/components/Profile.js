@@ -6,6 +6,8 @@ import "./Profile.css";
 import NavBarLogin from "./NavBarLogin";
 import NavBarPages from "./NavBarPages";
 import fire from "./Fire";
+import FavLink from"./FavLink";
+
 
 class Profile extends Component {
   constructor(props) {
@@ -15,6 +17,7 @@ class Profile extends Component {
       user: fire.auth().currentUser,
       id: "",
       data: null,
+      favorites: [{}],
       firstName: "",
       lastName: "",
       phoneNumber: "",
@@ -36,6 +39,19 @@ class Profile extends Component {
         .then((doc) => {
           doc.forEach((user) => {
             this.setState({ id: user.id, data: user.data(), pending: false });
+            let favItem;
+            Object.keys(this.state.data.favorites).map((fav) => (
+               console.log(fav),
+               
+               
+               console.log(user.data().favorites[fav]),
+                favItem = user.data().favorites[fav],
+               this.setState({
+                 favorites: [...this.state.favorites, favItem]
+               }),
+               console.log(this.state.favorites)
+               
+            ))
           });
         });
 		this.setState({pending:false});
@@ -45,6 +61,7 @@ class Profile extends Component {
   //Run after render, for updates
   componentDidMount() {
     this.getProfile();
+    
   }
 
   //update the user's profile
@@ -84,6 +101,7 @@ class Profile extends Component {
     if (this.state.pending) {
       return <>Getting user information...</>;
     } else {
+      
       return (
         <>
           {/*Top Login/Register navigation bar*/}
@@ -147,6 +165,16 @@ class Profile extends Component {
             >
               Submit
             </button>
+            {/* THIS NEEDS STYLING */}
+            <div>
+              <div>Your Favorites</div>
+              {this.state.favorites.map((item) => (
+                  <> 
+                    <FavLink car={item}/>
+                    
+                  </>
+                ))}
+            </div>
             <br></br>
             <br></br>
             <label for="error" id="error"></label>
