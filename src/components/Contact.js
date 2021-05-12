@@ -34,7 +34,6 @@ class Contact extends Component {
 						<p>Joseph Hyatt - Software Engineer / QA</p>
 						<p>Adam Zuiderveid - Software Engineer</p>
 						<p>Zhiming Zhao - Software Engineer</p>
-						<p>Brian Canales - Software Engineer</p>
 						<span style={{ color: "red" }}>
 							---------------------------------------------
 						</span>
