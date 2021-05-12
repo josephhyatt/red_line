@@ -1,0 +1,127 @@
+/*Top Navigation Bar */
+.navBar {
+	background-color: #aeaeae;
+	overflow: hidden;
+}
+
+.navBar a {
+	float: center;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 16px 16px;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+.navBar a:hover {
+	background-color: #ff0000;
+	color: black;
+}
+
+.navBar a.active {
+	background-color: #ff0000;
+	color: white;
+}
+
+/*Top Login/Register Bar */
+.topNav {
+	background-color: #ff0000;
+	overflow: hidden;
+}
+
+.topNav a {
+	float: right;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 10px 10px;
+	text-decoration: none;
+	font-size: 15px;
+}
+
+.topNav a:hover {
+	background-color: #ff0000;
+	color: black;
+}
+
+/*Footer */
+
+.footer {
+	float: center;
+	color: #f2f2f2;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 9px;
+	text-decoration: none;
+	font-size: 13px;
+}
+
+/*Banner Image*/
+.bannerblur img {
+	width: 100%;
+	filter: blur(8px);
+	-webkit-filter: blur(8px);
+}
+
+.loginform {
+	position: absolute;
+	top: 25%;
+	left: 40%;
+	padding: 20px;
+	width: 400px;
+	background-color: #dadada;
+	background-color: #dadada;
+}
+
+input[type="text"],
+input[type="password"] {
+	width: 100%;
+	padding: 5px;
+	margin: 5px 0 22px 0;
+	display: inline-block;
+	border: none;
+	background: #f1f1f1;
+}
+
+.loginfont {
+	text-align: center;
+}
+
+.bformtext {
+	text-align: center;
+}
+
+.registercolor {
+	color: blue;
+	font-weight: bold;
+}
+
+/*Site Top Logo*/
+.logo {
+	position: relative;
+	z-index: 1;
+	margin-left: 10px;
+	height: 10%;
+	width: 10%;
+	top: -5px;
+}
+
+@media only screen and (max-width: 425px) {
+	.loginform {
+		/* border: 3px solid green; */
+		position: absolute;
+		top: 34%;
+		width: 100%;
+		left: 0.1%;
+		padding: 20px;
+		align-items: center;
+	}
+	div .navbar-container a {
+		/* border: 3px solid green; */
+		display: block;
+		padding: 10px;
+	}
+	.login-style a {
+		border: 3px solid green;
+		/* display: block; */
+	}
+}

@@ -1,0 +1,12 @@
+/*CSS for Student Deals, do what you will, scrap if you must*/
+/*Watch for inline css in StudentDeals.js and Vehcile.js*/
+.dealBanner {
+	background-color: #ff0000;
+	font-size: 24px;
+	padding: 8px;
+	color: white;
+	margin-bottom: 12px;
+	overflow: hidden;
+	width: 100%;
+	text-align: center;
+}

@@ -1,0 +1,332 @@
+/*Top Navigation Bar */
+.navBar {
+	background-color: #aeaeae;
+	overflow: hidden;
+}
+
+.navBar a {
+	float: center;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 16px 16px;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+.navBar a:hover {
+	background-color: #ff0000;
+	color: black;
+}
+
+.navBar a.active {
+	background-color: #ff0000;
+	color: white;
+}
+
+/*Top Login/Register Bar */
+.topNav {
+	background-color: #ff0000;
+	overflow: hidden;
+}
+
+.topNav a {
+	float: right;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 10px 10px;
+	text-decoration: none;
+	font-size: 15px;
+}
+
+.topNav a:hover {
+	background-color: #ff0000;
+	color: black;
+}
+
+/*Search Bar*/
+.form-group {
+	background-color: #8a2121;
+	padding: 10px 750px;
+	/* margin-left: -8px;
+    margin-right: -8px; */
+	width: 100%;
+}
+
+.searchform {
+	position: relative;
+	top: 30px;
+	right: 70px;
+}
+.Submit {
+	background-color: #ff0000;
+	border: none;
+	color: white;
+	padding: 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 0px 450px;
+	cursor: pointer;
+	border-radius: 12px;
+	position: relative;
+	top: -35px;
+	right: 70px;
+}
+
+/*Footer */
+
+.footer div {
+	/* float: center; */
+	/* color: #f2f2f2; */
+	/* text-align: center; */
+	padding-top: 10px;
+	padding-bottom: 9px;
+	/* margin-top: 500px; */
+	/* text-decoration: none;
+	font-size: 13px; */
+	/* position: absolute;
+	bottom: 0; */
+	background-color: #d35353;
+	position: fixed;
+	bottom: 0;
+	/* left: 0; */
+
+	width: 100%;
+	/* border: 3px solid green; */
+}
+
+div .noscroll {
+	/* border: 3px solid green; */
+	padding-top: 10px;
+}
+
+.footer div p {
+	padding-top: 10px;
+}
+
+/*Banner Image*/
+.banner img {
+	background-size: cover;
+	width: 100%;
+}
+
+/*Site Top Logo*/
+.logo {
+	position: relative;
+	z-index: 1;
+	margin-left: 10px;
+	height: 10%;
+	width: 10%;
+	top: -5px;
+}
+
+.searchFilterBox {
+	text-align: center;
+}
+
+div .MuiButton-root {
+	margin-top: 15px;
+}
+
+div #add-car-form {
+	/* border: 3px solid #d35353; */
+	width: 400px;
+	padding: 20px;
+	margin: auto;
+	margin-bottom: 100px;
+}
+
+div #add-employee-form {
+	/* border: 3px solid #d35353; */
+	width: 400px;
+	padding: 20px;
+	margin: auto;
+}
+
+.table-striped {
+	/* border: 3px solid #d35353; */
+	width: 500px;
+	padding: 20px;
+	/* margin-left: 350px;
+	margin-top: 20px;
+	margin-bottom: 10px; */
+	margin: auto;
+}
+
+.addemployee {
+	/* border: 3px solid #d35353; */
+	margin-left: 500px;
+	/* padding: 20px; */
+	/* margin: auto; */
+}
+
+#updateCar {
+	/* border: 3px solid green; */
+	/* width: 70%; */
+	margin-left: 10px;
+	margin-top: 10px;
+	/* position: fixed; */
+}
+
+.h1-addCar {
+	/* border: 3px solid green; */
+	width: 290px;
+	/* padding: 20px; */
+	/* margin-bottom: -120px; */
+	margin: auto;
+}
+
+/* @keyframes animated-border {
+	0% {
+		box-shadow: 0 0 0 0 rgba(255, 1, 1, 0.4);
+	}
+	100% {
+		box-shadow: 0 0 0 20px rgba(255, 255, 255, 0);
+	}
+} */
+
+.box1 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 10vh;
+	background: #d35353;
+	margin-top: 20px;
+
+	animation: animated-border 1.5s infinite;
+	font-family: Arial;
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: bold;
+	color: white;
+	border: 2px solid;
+	border-radius: 10px;
+	padding: 15px;
+}
+
+div #update-form {
+	padding-left: 5px;
+}
+
+.card-img-top {
+	/* border: 3px solid green; */
+	max-width: 300px;
+}
+
+.card {
+	/* margin-bottom: -100px; */
+	width: 100%;
+	/* border-bottom: 800px; */
+}
+
+.admin-page {
+	/* border: 3px solid green; */
+	width: 250px;
+	margin: auto;
+	margin-top: 40px;
+	margin-bottom: 80px;
+}
+
+.add-employee {
+	/* border: 3px solid green; */
+	width: 250px;
+	margin: auto;
+	margin-top: 40px;
+}
+
+div #email {
+	/* border: 3px solid green; */
+	width: 250px;
+}
+
+.h1-addEmployee {
+	margin-left: 19px;
+}
+
+.Inventory-p {
+	/* border: 3px solid green; */
+	text-align: center;
+	margin-top: 20px;
+}
+
+.add-vehicle {
+	text-align: center;
+	margin-top: 10px;
+}
+
+div .card-text-center {
+	/* border: 3px solid #d35353; */
+}
+
+@media only screen and (max-width: 1200px) {
+}
+@media only screen and (max-width: 600px) {
+}
+
+@media only screen and (max-width: 425px) {
+	div .searchFilterBox {
+		text-align: center;
+		/* border: 3px solid green; */
+		padding-bottom: 10px;
+	}
+
+	div .card-text-center {
+		padding-top: 0px;
+		margin-bottom: 10px;
+	}
+
+	/* nav .navBar a {
+		font-size: 113px;
+		display: block;
+	} */
+
+	.logo {
+		display: none;
+	}
+
+	.big-img {
+		/* border: 3px solid green; */
+		width: 100%;
+		text-align: center;
+	}
+	div .noscroll {
+		/* border: 3px solid green; */
+		align-items: center;
+		padding: 39px;
+		width: 100%;
+		height: 100%;
+	}
+	.search-margin-bottom {
+		margin-bottom: 100px;
+	}
+	.add-employee {
+		/* border: 3px solid green; */
+		width: 250px;
+		margin: auto;
+		margin-top: 40px;
+	}
+
+	div #email {
+		/* border: 3px solid green; */
+		width: 200px;
+	}
+	.admin-page {
+		/* border: 3px solid green; */
+		width: 250px;
+		margin: auto;
+		margin-top: 40px;
+		margin-bottom: 140px;
+	}
+	div #add-car-form {
+		/* border: 3px solid green; */
+		width: 400px;
+		padding: 20px;
+		margin: auto;
+		margin-bottom: 150px;
+	}
+	div #fix-grid {
+		/* border: 3px solid green; */
+		max-height: 350px;
+	}
+}
