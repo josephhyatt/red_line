@@ -19,9 +19,9 @@ In your terminal run `npm start`
 If the server doesn't open automatically in the web browser goto the URL localhost:3000
 
 ### `Contributors`
-Robert Everhart - Project Manager / SE
-Jairus Latayan - Assistant Project Manager
-Carlos Maldonado - Software Engineer
-Joseph Hyatt - Software Engineer / QA
-Adam Zuiderveid - Software Engineer
-Zhiming Zhao - Software Engineer
+Robert Everhart - Project Manager / SE <br />
+Jairus Latayan - Assistant Project Manager <br />
+Carlos Maldonado - Software Engineer <br />
+Joseph Hyatt - Software Engineer / QA <br />
+Adam Zuiderveid - Software Engineer <br />
+Zhiming Zhao - Software Engineer <br />
